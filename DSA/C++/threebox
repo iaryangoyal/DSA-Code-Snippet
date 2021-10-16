@@ -1,0 +1,29 @@
+//THREEBOX FROM CODECHEF
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int t;
+    cin>>t;
+    while(t--){
+        int a,b,c,d,sum,rem,bag=0;
+        cin>>a>>b>>c>>d;
+        sum=a+b+c;
+        if(sum > d){
+            if(a+b>d){
+                bag=3;
+            }
+            if(a+b<=d){
+                bag=2;
+            }
+            cout<<bag<<endl;
+        }
+        else if(sum<=d){
+            bag=1;
+            cout<<bag<<endl;
+        }
+        
+    }
+	return 0;
+}
